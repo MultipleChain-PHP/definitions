@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace MultipleChain\Interfaces\Services;
 
+use MultipleChain\Interfaces\ProviderInterface;
+
 /**
  * @property mixed $rawData
  * @property mixed $signedData

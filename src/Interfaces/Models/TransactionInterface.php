@@ -6,7 +6,7 @@ namespace MultipleChain\Interfaces\Models;
 
 use MultipleChain\Enums\TransactionType;
 use MultipleChain\Enums\TransactionStatus;
-use MultipleChain\Interfaces\Services\ProviderInterface;
+use MultipleChain\Interfaces\ProviderInterface;
 
 /**
  * @property string $id

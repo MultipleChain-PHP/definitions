@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace MultipleChain\Interfaces\Services;
+namespace MultipleChain\Interfaces;
 
-use MultipleChain\Types\NetworkConfig;
+use MultipleChain\BaseNetworkConfig;
 
 /**
- * @property NetworkConfig $network
+ * @property BaseNetworkConfig $network
  * @property ProviderInterface|null $instance (static)
  */
 interface ProviderInterface
 {
     /**
-     * @param NetworkConfig $networkConfig
+     * @param array<string,mixed> $network
      */
-    public function __construct(NetworkConfig $networkConfig);
+    public function __construct(array $network);
 
     /**
      * @return ProviderInterface
@@ -23,16 +23,16 @@ interface ProviderInterface
     public static function instance(): ProviderInterface;
 
     /**
-     * @param NetworkConfig $networkConfig
+     * @param array<string,mixed> $network
      * @return void
      */
-    public static function initialize(NetworkConfig $networkConfig): void;
+    public static function initialize(array $network): void;
 
     /**
-     * @param NetworkConfig $networkConfig
+     * @param array<string,mixed> $network
      * @return void
      */
-    public function update(NetworkConfig $networkConfig): void;
+    public function update(array $network): void;
 
     /**
      * @return boolean

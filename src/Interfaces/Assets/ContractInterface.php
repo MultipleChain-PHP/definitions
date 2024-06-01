@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace MultipleChain\Interfaces\Assets;
 
-use MultipleChain\Interfaces\Services\ProviderInterface;
+use MultipleChain\Interfaces\ProviderInterface;
 
 /**
  * @property string $address

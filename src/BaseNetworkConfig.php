@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MultipleChain\Types;
+namespace MultipleChain;
 
-class NetworkConfig
+class BaseNetworkConfig
 {
     /**
      * @var string|null
