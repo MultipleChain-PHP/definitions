@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MultipleChain\Interfaces\Models;
 
+use MultipleChain\Utils\Number;
 use MultipleChain\Enums\TransactionType;
 use MultipleChain\Enums\TransactionStatus;
 use MultipleChain\Interfaces\ProviderInterface;

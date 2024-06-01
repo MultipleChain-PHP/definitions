@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MultipleChain\Interfaces\Assets;
 
+use MultipleChain\Utils\Number;
 use MultipleChain\Interfaces\Services\TransactionSignerInterface;
 
 interface TokenInterface extends AssetInterface, ContractInterface
