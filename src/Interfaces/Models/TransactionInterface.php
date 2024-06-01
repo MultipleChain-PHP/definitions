@@ -53,9 +53,9 @@ interface TransactionInterface
     public function getSigner(): string;
 
     /**
-     * @return float
+     * @return Number
      */
-    public function getFee(): float;
+    public function getFee(): Number;
 
     /**
      * @return int

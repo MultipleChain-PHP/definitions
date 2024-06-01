@@ -14,16 +14,16 @@ interface TokenInterface extends AssetInterface, ContractInterface
     public function getDecimals(): int;
 
     /**
-     * @return float
+     * @return Number
      */
-    public function getTotalSupply(): float;
+    public function getTotalSupply(): Number;
 
     /**
      * @param string $owner
      * @param string $spender
-     * @return float
+     * @return Number
      */
-    public function getAllowance(string $owner, string $spender): float;
+    public function getAllowance(string $owner, string $spender): Number;
 
     /**
      * @param string $sender

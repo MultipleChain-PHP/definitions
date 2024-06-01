@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace MultipleChain\Interfaces\Assets;
 
+use MultipleChain\Utils\Number;
+
 interface AssetInterface
 {
     /**
@@ -18,7 +20,7 @@ interface AssetInterface
 
     /**
      * @param string $owner
-     * @return float
+     * @return Number
      */
-    public function getBalance(string $owner): float;
+    public function getBalance(string $owner): Number;
 }

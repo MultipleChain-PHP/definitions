@@ -10,9 +10,9 @@ use MultipleChain\Enums\TransactionStatus;
 interface CoinTransactionInterface extends AssetTransactionInterface
 {
     /**
-     * @return float
+     * @return Number
      */
-    public function getAmount(): float;
+    public function getAmount(): Number;
 
     /**
      * @param AssetDirection $direction
