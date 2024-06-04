@@ -9,6 +9,7 @@ use MultipleChain\Interfaces\ProviderInterface;
 /**
  * @property string $address
  * @property ProviderInterface $provider
+ * @property array<string,mixed> $cachedMethods
  */
 interface ContractInterface
 {
@@ -29,6 +30,13 @@ interface ContractInterface
      * @return mixed
      */
     public function callMethod(string $method, mixed ...$args): mixed;
+
+    /**
+     * @param string $method
+     * @param mixed ...$args
+     * @return mixed
+     */
+    public function callMethodWithCache(string $method, mixed ...$args): mixed;
 
     /**
      * @param string $method
